@@ -32,14 +32,14 @@
 }
 
 .navbar-inverse {
-  background: #323232 !important;
+  background: #393939 !important;
 }
 .navbar-item :hover{
   background: #424242 !important;
   color: #ee8830 !important;
 }
 .navbar-item a{
-  color: #a25319 !important;
+  color: #c0c0c0 !important;
   font-weight: bold;
   font-size: 110%;
 }
