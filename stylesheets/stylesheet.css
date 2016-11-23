@@ -4,6 +4,9 @@
 .grey-background {
   background: #212121;
 }
+.grey-background-light {
+  background: #c0c0c0;
+}
 
 .title {
   border-bottom-style: solid;
@@ -57,6 +60,40 @@
   width:auto;
 }
 /*end workaround*/
-p {
-  margin-bottom: 500px !important;
+
+.my-face {
+  max-width:100%;
+  height: auto;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  margin: 10px 20px;
+  float: left;
 }
+
+.welcome:after {
+  content:'';
+  display:block;
+  clear: both;
+}
+
+.content p {
+  padding: 10px 5px;
+}
+
+.portfolio {
+  margin: 125px auto;
+  display: table;
+}
+.portfolio .card {
+  max-height: 250px;
+  display: table-cell;
+  padding: 0px 3px;
+}
+
+.portfolio .card:hover {
+  transition: transform 1s cubic-bezier(.28,.99,.74,.94);
+  -ms-transform: scale(2,2);
+  -webkit-transform: scale(2,2);
+  transform: scale(2,2);
+}
+
