@@ -34,6 +34,9 @@
 .navbar-inverse {
   background: #393939 !important;
 }
+.navbar-item {
+  padding: 0px 7px;
+}
 .navbar-item :hover{
   background: #424242 !important;
   color: #ee8830 !important;
@@ -42,6 +45,7 @@
   color: #c0c0c0 !important;
   font-weight: bold;
   font-size: 110%;
+  border-radius: 7%;
 }
 
 /*justified navbar workaround*/
