@@ -95,17 +95,41 @@ body {
   padding: 10px 5px;
 }
 
-.portfolio {
-  margin: 125px auto;
-  display: table;
-}
-.portfolio .card {
-  max-height: 250px;
-  display: table-cell;
-  padding: 0px 3px;
+.content h3 {
+  margin-top: 35px;
 }
 
-.portfolio .card:hover {
+.gallery {
+  margin: 25px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.gallery .card {
+  border-radius: 3%;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.gallery .card img {
+  border-radius: 3%;
+}
+.gallery .card p {
+  width: 200px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.gallery .card a{
+  color: #c0c0c0;
+}
+.gallery .card a:hover{
+  color: #ee8830;
+  text-decoration: none;
+}
+.gallery .card:hover {
   transition: transform 1s cubic-bezier(.28,.99,.74,.94);
   -ms-transform: scale(2,2);
   -webkit-transform: scale(2,2);
