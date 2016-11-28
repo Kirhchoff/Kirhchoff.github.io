@@ -1,19 +1,24 @@
-
-var previousOffset;
-
-document.addEventListener("scroll", function() {
-var bar = $("#navigation");
-console.log(previousOffset);
-if ((window.pageYOffset > 100) && (previousOffset <= 100)) {
-  console.log("t");
-  bar.removeClass("");
-  bar.addClass("navbar-fixed-top");
+function controlNavigationBar(offset, bar, container) {
+  if (typeof this.previousOffset == "undefined"){
+    this.previousOffset = 0;
+  }
+  var pos = container.offset().top;
+  if ((offset > pos) && (previousOffset <= pos)) {
+    bar.addClass("navbar-fixed-top");
+  }
+    
+  else if (offset <= pos && previousOffset > pos) {
+    bar.removeClass("navbar-fixed-top");
+  }
+  this.previousOffset = offset;
 }
+
+$('document').ready(function(){
+  controlNavigationBar(window.pageYOffset, $("#navigation"), $("#navigation-container"));
   
-else if (window.pageYOffset <= 100 && previousOffset > 100) {
-  console.log("s");
-  bar.removeClass("navbar-fixed-top");
-  bar.addClass("");
+  document.addEventListener("scroll", function() {
+    controlNavigationBar(window.pageYOffset, $("#navigation"), $("#navigation-container"));
+  });
 }
-previousOffset = window.pageYOffset;
-});
+);
+

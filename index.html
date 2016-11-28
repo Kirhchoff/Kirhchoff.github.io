@@ -18,21 +18,21 @@
 
     <div class="container-fluid">
         <div class="row grey-background">
-            <div class="col-md-2 col-xs-1"></div>
-            <div class="col-md-8 col-xs-10">
+            <div class="col-md-2 col-xs-0"></div>
+            <div class="col-md-8 col-xs-12">
                 <div class="text-center title">Krzysztof Kirsz</div>
                 <div class="text-center subtitle">A software developer</div>
             </div>
-            <div class="col-md-2 col-xs-1">
+            <div class="col-md-2 col-xs-12">
                 <div>
                     <a href="https://github.com/Kirhchoff"><i class="fa fa-github fa-2x icon"></i></a>
                     <a href="https://pl.linkedin.com/in/krzysztof-kirsz-63544355"><i class="fa fa-linkedin fa-2x icon"></i></a>
+                    <a href="https://twitter.com/Kirhchoff"><i class="fa fa-twitter fa-2x icon"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row grey-background navigation-bar">
+
+        <div class="row grey-background navigation-bar" id="navigation-container">
             <div class="col-md-2 col-xs-0"></div>
             <div class="col-md-8 col-xs-0">
                 <nav class="navbar navbar-inverse" id="navigation">
@@ -63,55 +63,84 @@
         <div class="col-md-2 col-xs-0"></div>
         <div class="col-md-8 col-xs-12">
             <div class="content">
-              <div class="welcome">
-                <h3><a name="welcome"></a> Welcome to my personal page!</h3>
+              <div class="welcome section">
+                <h3> Welcome to my personal page!</h3>
                 <img class="my-face" src="images/face.png" alt="My face.">
                 <p>Hello,<br>my name Krzysztof Kirsz, but you can call me Chris. This page is all about me :). Feel free to have a look around. You should probably check out my humble <a href="#portfolio">portfolio</a> in the first place. It contains some projects i did im my free time.<br>If you like what you see and want to let me know or just want to get in touch, check out the <a href="#contact">contact information section</a></p>
               </div>
 
-
-                <h3><a name="about"></a> About me</h3>
+              <div class="section"><a name="about"></a>
+                <h3> About me</h3>
                 <p>
                 I am a software developer with quite a lot of experience in creating C++ applications. Currently i work for Nokia as Senior software developer and Software Architect. In my spare time i like having fun with my family. Occasionally i am also able to gather enough energy to learn some new (at least to me) technologies. Right now i am trying to get a grip on front-end development, which is totally opposite to what i did so far. This page is the product and a showcase of what i have learned so far.
                 </p>
-
-                <h3><a name="portfolio"> </a>My projects</h3>
+              </div>
+              <div class="section"><a name="portfolio"></a>
+                <h3> My projects</h3>
                 <div class="gallery">
-                  <div class="card grey-background">
+                  <div class="card grey-background-light">
                     <a href="https://codepen.io/Kirhchoff/full/rWaezj/"><img src="images/tribute.png" alt="Tribute to I. J. Paderewski thumbnail">
                       <p>Tribute to I. J. Paderewski (training Codepen project)</p></a>
                   </div>
-                  <div class="card grey-background">
+                  <div class="card grey-background-light">
                     <a href="https://github.com/Kirhchoff/TinyTest">
                       <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/C_plus_plus.svg" width="200px" alt="TinyTest C++ unit testing framework">
-                      <p>TinyTest - C++ header-only unit testing framework</p></a>
+                      <p>TinyTest - C++ header-only unit testing "framework"</p></a>
                   </div>
                   <div class="card grey-background-light">
-                    <a class="light" href="#portfolio"><img src="http://placehold.it/200x200" alt="Portfolio placeholder item">
+                    <a href="#portfolio"><img src="http://placehold.it/200x200" alt="Portfolio placeholder item">
                       <p>Portfolio placeholder item<br>is light background better?</p></a>
                   </div>
-                  <div class="card grey-background">
+                  <div class="card grey-background-light">
                     <a href="#portfolio"><img src="http://placehold.it/200x200" alt="Portfolio placeholder item">
-                      <p>Portfolio placeholder item</p></a>
+                      <p>Portfolio placeholder item<br>is light background better?</p></a>
                   </div>
-                  <div class="card grey-background">
+                  <div class="card grey-background-light">
                     <a href="#portfolio"><img src="http://placehold.it/200x200" alt="Portfolio placeholder item">
-                      <p>Portfolio placeholder item</p></a>
+                      <p>Portfolio placeholder item<br>is light background better?</p></a>
                   </div>
-                  <div class="card grey-background">
+                  <div class="card grey-background-light">
                     <a href="#portfolio"><img src="http://placehold.it/200x200" alt="Portfolio placeholder item">
-                      <p>Portfolio placeholder item</p></a>
+                      <p>Portfolio placeholder item<br>is light background better?</p></a>
                   </div>
                 </div>
-
-                <h3><a name="contact"></a>Contact information</h3>
-                <p>
-                Feel free to contact me using:
-                <a href="https://pl.linkedin.com/in/krzysztof-kirsz-63544355" class="btn btn-primary" role="button">linkedin <i class="fa fa-linkedin"></i></a> or 
-                <a href="https://github.com/Kirhchoff" class="btn btn-primary" role="button">github <i class="fa fa-github"></i></a></a>
-                </p>
-
+              </div>
             </div>
+        </div>
+      </div>
+      <div class="row grey-background footer">
+        <a name="contact"></a>
+        <div class="col-md-2 col-xs-0">
+        </div>
+        <div class="col-md-8 col-xs-12">
+          <div class="footer">
+          <h3> Contact information</h3>
+          <p></p>
+          <h4> Krzysztof Kirsz</h4>
+          <p>
+          Software developer and architect.</p>
+          <p>
+          Feel free to contact me using:<br>
+          </p>
+          <div class="media-buttons">
+            <a href="https://pl.linkedin.com/in/krzysztof-kirsz-63544355" class="btn btn-default" role="button">linkedin <i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Kirhchoff" class="btn btn-default" role="button">github <i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/Kirhchoff" class="btn btn-default" role="button">twitter <i class="fa fa-twitter"></i></a>
+          </div>
+          
+          
+          <p class="creation-remark">
+          Created from scratch by <a href="https://kirhchoff.github.io/">Krzysztof Kirsz</a> 
+          using
+          <i class="fa fa-html5" aria-hidden="true"></i>
+          <i class="fa fa-css3" aria-hidden="true"></i>
+          <i class="fa fa-github" aria-hidden="true"></i> Javascript, 
+          <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://fontawesome.io/"><i class="fa fa-font-awesome" aria-hidden="true"></i></a>,
+          <a href="https://codepen.io/"><i class="fa fa-codepen" aria-hidden="true"></i></a>. 
+          Special thanks to <a href="https://www.freecodecamp.com">FreeCodeCamp</a> for just enough extra motivation and help to make me finish this site!
+          </p>
+        </div>
+        <div class="col-md-2 col-xs-0">
         </div>
       </div>
     </div>
