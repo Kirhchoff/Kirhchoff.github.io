@@ -113,10 +113,14 @@ body {
   display:block;
   clear: both;
 }
+.welcome-text {
+  margin-top: 40px;
+}
 
 .content p {
   padding: 10px 5px;
   font-size: 115%;
+  text-align: justify;
 }
 
 .content h2 {
