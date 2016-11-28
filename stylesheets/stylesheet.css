@@ -116,6 +116,7 @@ body {
 }
 .gallery .card img {
   border-radius: 3%;
+  max-width: 200px;
 }
 .gallery .card p {
   width: 200px;
@@ -124,6 +125,9 @@ body {
 }
 .gallery .card a{
   color: #c0c0c0;
+}
+.gallery .card .light{
+  color: #111;
 }
 .gallery .card a:hover{
   color: #ee8830;
