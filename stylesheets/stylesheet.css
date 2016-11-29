@@ -17,12 +17,14 @@ body {
   color: #ee8830;
   font-weight: bold;
   font-size: 260%;
+  letter-spacing: 1px;
 }
 .subtitle {
   padding-top: 4px;
   margin-bottom: 7px;
   color: #bc6520;
   font-size: 140%;
+  letter-spacing: 1px;
 }
 .footer {
   margin-top: 50px;
@@ -178,5 +180,8 @@ body {
   -webkit-transform: scale(1.5, 1.5);
   transform: scale(1.5, 1.5);
   z-index: 10;
+}
+.fa-heart {
+  color: red;
 }
 
