@@ -1,3 +1,6 @@
 [submodule "cv"]
 	path = cv
 	url = https://github.com/Kirhchoff/impreCV.git
+[submodule "panama"]
+	path = panama
+	url = https://github.com/Kirhchoff/PanaMaGroup_page.git
