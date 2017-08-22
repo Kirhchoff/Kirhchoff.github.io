@@ -4,3 +4,6 @@
 [submodule "panama"]
 	path = panama
 	url = https://github.com/Kirhchoff/PanaMaGroup_page.git
+[submodule "DevQuotes"]
+	path = DevQuotes
+	url = https://github.com/Kirhchoff/DevQuotes.git
